@@ -10,8 +10,19 @@
 </head>
 <body>
   <div class="container">
-    <div id="clock" name="clock" style="width: 100%; text-align: center;">...</div>
+    <div id="clock" name="clock">
+    </div>
   </div>
+  <style>
+    #clock {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: #f2f2f2;
+      font-size: 100px;
+      margin-top: 20%;
+    }
+  </style>
   <script type="text/javascript">
     $(document).ready(function(){
       setInterval('updateClock()', 1000);
@@ -22,6 +33,14 @@
       var currentHours   = currentTime.getHours();
       var currentMinutes = currentTime.getMinutes();
       var currentSeconds = currentTime.getSeconds();
+
+      if(currentMinutes < 10){
+        currentMinutes = '0' + currentMinutes;
+      }
+
+      if(currentSeconds < 10){
+        currentSeconds = '0' + currentSeconds;
+      }
 
       var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds;
 
