@@ -37,7 +37,7 @@
       animation-delay: 0s;
       animation-iteration-count: infinite;
     }
-    
+
     @keyframes colorchange{
       0%{background-color: #f4e749;}
       10%{background-color: #60bbf4;}
@@ -53,12 +53,34 @@
     }
 
     #clock {
-      width: 100%;
-      height: 100%;
+      width: 70%;
+      height: 70%;
       text-align: center;
       color: #041123;
       font-size: 100px;
-      margin-top: 20%;
+      margin-top: 25%;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgb(255,255,255);
+      animation-name: stylecolorborder;
+      animation-duration: 11s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes stylecolorborder{
+      0%{background-color: #C6AE83;border-radius: 30% 70% 52% 48% / 30% 30% 70% 70%;}
+      10%{background-color: #C70039;border-radius: 30% 70% 52% 48% / 80% 30% 70% 20%;}
+      20%{background-color: #443E34;border-radius: 30% 70% 52% 48% / 80% 89% 11% 20%;}
+      30%{background-color: #80CE23;border-radius: 91% 9% 74% 26% / 80% 0% 100% 20%;}
+      40%{background-color: #090D8C;border-radius: 91% 9% 27% 73% / 80% 0% 100% 20%;}
+      50%{background-color: #F16CEB;border-radius: 91% 9% 0% 100% / 48% 0% 100% 52%;}
+      60%{background-color: #15661A;border-radius: 91% 9% 0% 100% / 0% 0% 100% 100%;}
+      70%{background-color: #F3ED2E;border-radius: 35% 65% 0% 100% / 0% 100% 0% 100%;}
+      80%{background-color: #9B212E;border-radius: 35% 65% 43% 57% / 55% 58% 42% 45%;}
+      90%{background-color: #219B6D;border-radius: 0% 100% 43% 57% / 76% 47% 53% 24%;}
+      100%{background-color: #896F69;border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;}
     }
 
     a {
