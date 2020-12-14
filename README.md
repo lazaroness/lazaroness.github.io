@@ -5,7 +5,7 @@
 * Version: 20201214
 
 ```
-git cline git@github.com:lazaroness/lazaroness.github.io.git
+git clone git@github.com:lazaroness/lazaroness.github.io.git
 ```
 
 [![Lazarone S. Santana](./images/avatar.jpg)](https://lazaroness.github.io)
